@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ANVESHAN FOUNDATION</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+$(function () {
+    $('.marquee').marquee({
+         duration: 5000,
+         duplicated: true,
+         gap: 00, 
+         direction: 'left',
+         pauseOnHover: true
+    });
+});
+</script>
+</head>
+<body>
+
+<div>
+<header>
+  <a href="#logo"><img src="logo.png" class="image" /></a>
+  <br />
+  <h1>IGDTUW - ANVESHAN FOUNDATION</h1>
+  <h3>(Indira Gandhi Delhi Technical University For Women)</h3>
+</header>
+</div>
+
+<ul>
+  <li><a href="#">Dashboard</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+	<div class="dropdown-content">
+      <a href="mission.html">Mission</a>
+      <a href="vision.html">Vision</a>
+      <a href="ceo.html">Message From CEO</a>
+	  <a href="director.html">Message From Directors</a>
+	  <a href="board.html">Board Of Governance</a>
+    </div>
+  <li><a href="#">CSR Donations</a></li>
+  <li><a href="#">E-Cell</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Associations</a>
+    <div class="dropdown-content">
+      <a href="#">Incubatees</a>
+      <a href="#">Be A Consultant</a>
+      <a href="#">Partners</a>
+    </div>
+	<li><a href="#">Programs</a></li>
+	<li><a href="contact1.html">Contact</a></li>
+	<li><a href="register.php" class="btn-right" style="float:right">Apply Now</a></li>
+  </li>
+</ul>
+
+<div class="marquee">
+  <div><marquee  onmouseover='this.stop()' onmouseout='this.start()'>
+    <a href="#"><img src="download.jpg" alt="" style="max-height:100px" /></a>
+    <a href="#"><img src="download 1.jpg" alt="" style="max-height:100px" /></a>
+    <a href="#"><img src="images.jpg" alt="" style="max-height:100px" /></a>
+    <a href="#"><img src="IGDTUW.jpg" alt="" style="max-height:100px" /></a>
+    <a href="#"><img src="img1.jpg" alt="" style="max-height:100px" /></a>
+    <a href="#"><img src="img2.jpg" alt="" style="max-height:100px" /></a>
+  </div></marquee>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <a href="#">Programs</a>
+  <a href="#">Gallery</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="w3-half">
+<div class="w3-content w3-section" style="max-width:500px">
+   <img class="mySlides" src="img1.jpg" style="float:right" />
+   <img class="mySlides" src="img2.jpg" style="float:right"/>
+</div>
+</div>
+
+<div class="w3-container w3-half">
+  <h2><b>Join Anveshan Foundation</b></h2>
+  <div class="w3-panel w3-green w3-bottombar w3-topbar w3-border w3-round-xlarge" style="height: 100%">
+    <p>
+	 Join IGDTUW's incubation programme in which 
+     you will be provided full support to raise funds, 
+	 interact with Venture Capitalist, establish your business, 
+	 write your business plans, recruit talent, network with peers 
+	 and get training among many other services that will help you attain success in your business venture.
+    </p>
+  </div>
+</div>
+
+
+<div class="w3-half">
+    <div class="w3-card-3">
+      <div class="w3-container">
+        <p><strong>News And Announcements</strong></p>
+        <marquee direction="up" scrollamount="2" onmouseover='this.stop()' onmouseout='this.start()'><a href="#">Start proposals invited from students</a></marquee>
+		<marquee direction="up" scrollamount="2" onmouseover='this.stop()' onmouseout='this.start()'><a href="#">Start proposals invited from IGDTUW alumni</a></marquee>
+		<marquee direction="up" scrollamount="2" onmouseover='this.stop()' onmouseout='this.start()'><a href="#">Start proposals invited from faculty members</a></marquee>
+      </div>
+    </div>
+</div>
+  
+<footer class="w3-container">
+   <strong><a href="#">Home</a> | <a href="#">About Us</a></strong>
+   <br />
+   <a href="https://www.facebook.com/Igdtuw-Anveshan-Foundation-274732572955930/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+   <a href="https://twitter.com/anveshanfn"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+   <a href="https://www.linkedin.com/groups/10334293"><i id="social-tw" class="fa fa-linkedin-square fa-3x social"></i></a>
+   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ceoincubationcenter@igdtuw.ac.in"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+</footer>
+
+<script type="text/javascript">
+	var myIndex = 0;
+    carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>
